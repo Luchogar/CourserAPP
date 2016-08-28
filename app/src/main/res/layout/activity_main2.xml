@@ -46,6 +46,7 @@
         android:layout_below="@+id/muestra3"
         android:layout_alignStart="@+id/muestra1"
         android:layout_marginTop="@dimen/margenes" />
+   <!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,4 +57,18 @@
         android:layout_below="@+id/muestra4"
         android:layout_alignStart="@+id/muestra1"
         android:layout_marginTop="@dimen/margenes" />
+    -->
+    <TextView
+        android:id="@+id/muestra5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/muestra4"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bot2"
+        android:id="@+id/edit"
+        android:layout_below="@+id/muestra5"
+        android:layout_alignEnd="@+id/muestra1" />
 </RelativeLayout>

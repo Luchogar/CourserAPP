@@ -57,18 +57,16 @@ ya que con el apoyo no funciono el codigo anterior-->
         android:textStyle="italic"
         />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenes"
-        android:id="@+id/fecha"
-        android:layout_below="@+id/correo"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/name"
-        android:hint="@string/fech"
-        android:textStyle="italic"
-        />
-
+        android:text="@string/fech"/>
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:id="@+id/Fech" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

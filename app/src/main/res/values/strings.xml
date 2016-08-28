@@ -7,4 +7,8 @@
     <string name="descrip">Ingresa una breve descripción tuya.</string>
     <string name="fech">Ingresa tu fecha de nacimiento.</string>
     <string name="Siguiente">Siguiente</string>
+    <string name="DIA">Dia</string>
+    <string name="MES">Mes</string>
+    <string name="AÑO">Año</string>
+    <string name="bot2">Editar</string>
 </resources>
