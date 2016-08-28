@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CourserAPP</string>
+    <string name="presentacion">Hola!! ingresa tus datos por favor.</string>
+    <string name="nombre">Ingresa tu nombre completo.</string>
+    <string name="telefono">Ingresa tu número de telefono.</string>
+    <string name="email">Ingresa tu e-mail.</string>
+    <string name="descrip">Ingresa una breve descripción tuya.</string>
+    <string name="fech">Ingresa tu fecha de nacimiento.</string>
+    <string name="Siguiente">Siguiente</string>
+</resources>

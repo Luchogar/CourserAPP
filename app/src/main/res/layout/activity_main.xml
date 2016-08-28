@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="mx.grupogarcia.coursera.MainActivity"
+    android:background="#ffffff"
+    android:orientation="vertical">
+<!-- Aqui establecimos unos parametros de ajuste
+ya que con el apoyo no funciono el codigo anterior-->
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marbotton"
+        android:id="@+id/name"
+        android:hint="@string/nombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenes"
+        android:id="@+id/telefono"
+        android:layout_below="@+id/name"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/name"
+        android:hint="@string/telefono"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenes"
+        android:id="@+id/correo"
+        android:layout_below="@+id/telefono"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/telefono"
+        android:hint="@string/email"
+        android:textStyle="italic"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenes"
+        android:id="@+id/description"
+        android:layout_below="@+id/correo"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/name"
+        android:hint="@string/descrip"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenes"
+        android:id="@+id/fecha"
+        android:layout_below="@+id/correo"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/name"
+        android:hint="@string/fech"
+        android:textStyle="italic"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Siguiente"
+        android:id="@+id/siguiente"
+        android:layout_marginLeft="@dimen/marbotton"
+        android:layout_marginRight="@dimen/marbotton"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marbotton"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marbotton"
+        android:theme="@style/botonsig"/>
+</LinearLayout>
