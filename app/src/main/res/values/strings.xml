@@ -11,4 +11,5 @@
     <string name="MES">Mes</string>
     <string name="AÑO">Año</string>
     <string name="bot2">Editar</string>
+    <string name="validar">Validar datos.</string>
 </resources>

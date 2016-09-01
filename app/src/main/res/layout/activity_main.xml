@@ -1,85 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    tools:context="mx.grupogarcia.coursera.MainActivity"
+    tools:context="mx.grupogarcia.coursera.PersonaActivity"
     android:background="#ffffff"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/Principal"
+    >
 <!-- Aqui establecimos unos parametros de ajuste
 ya que con el apoyo no funciono el codigo anterior-->
 
-
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/marbotton"
-        android:id="@+id/name"
-        android:hint="@string/nombre"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="italic"/>
+        android:layout_height="match_parent"
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenes"
-        android:id="@+id/telefono"
-        android:layout_below="@+id/name"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/name"
-        android:hint="@string/telefono"
-        android:textStyle="italic"
-        />
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:weightSum="1"/>
 
-    <EditText
+    <LinearLayout
+        android:id="@+id/detalles"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenes"
-        android:id="@+id/correo"
-        android:layout_below="@+id/telefono"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/telefono"
-        android:hint="@string/email"
-        android:textStyle="italic"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margenes"
-        android:id="@+id/description"
-        android:layout_below="@+id/correo"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/name"
-        android:hint="@string/descrip"
-        android:textStyle="italic"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fech"/>
-    <DatePicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"
-        android:calendarViewShown="false"
-        android:id="@+id/Fech" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre"/>
+                    </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fech"/>
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:id="@+id/dpFechaNacimiento" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono"
+                android:inputType="phone"
+                android:ems="10"/>
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="@string/descrip"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Siguiente"
-        android:id="@+id/siguiente"
-        android:layout_marginLeft="@dimen/marbotton"
-        android:layout_marginRight="@dimen/marbotton"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/marbotton"
-        android:gravity="center"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/marbotton"
+        android:layout_alignBottom="@+id/detalles"
+        android:textSize="@dimen/marbotton"
         android:theme="@style/botonsig"/>
-</LinearLayout>
+        <!--
+        android:textSize="@dimen/marbotton"
+        -->
+
+
+</RelativeLayout>

@@ -1,6 +1,9 @@
 <resources>
 
     <!-- Base application theme. -->
+
+
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -8,10 +11,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="botonsig" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorButtonNormal">@color/colorAccent</item>
-        <item name="android:colorControlHighlight">@color/colorPrimaryDark</item>
-        <item name="android:textColor">@color/colorBlanco</item>
-
+    <style name="botonsig" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/primary_light</item>
+        <!--<item name="android:textColor">@color/icons</item>-->
     </style>
+
 </resources>
